@@ -1,11 +1,11 @@
 import {httpApiMock} from '@app/api/mocks/http.api.mock'
 import {AuthData} from '@app/api/auth.api'
-import {initValues} from '@app/components/auth/LoginForm/LoginForm'
+// import {initValues} from '@app/components/auth/LoginForm/LoginForm'
 import avatarImg from '@app/assets/avatars/avatar5.png'
 
 httpApiMock.onPost('login').reply(config => {
     const data: AuthData = JSON.parse(config.data || '')
-    if (data.password === initValues.password) {
+    if (data.password) {
         return [
             200,
             {
