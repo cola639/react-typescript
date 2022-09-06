@@ -3,6 +3,7 @@ $fontSC: 'PingFang SC';
 .home_top {
     width: 100%;
     height: 7.8667rem;
+    margin-top: -1.5rem;
     padding-top: 6.2933rem;
     position: relative;
     text-align: center;
@@ -20,7 +21,7 @@ $fontSC: 'PingFang SC';
 }
 
 .home_middle {
-    width: 90.4%;
+    width: 92%;
     margin: 0 auto;
     margin-top: 0.6133rem;
     .home_middle_info {
@@ -38,7 +39,6 @@ $fontSC: 'PingFang SC';
         text-align: center;
 
         span {
-            color: rgba(215, 10, 11, 1);
             font-size: 0.4267rem;
             font-weight: 700;
             font-family: 'PingFang SC';
@@ -46,39 +46,27 @@ $fontSC: 'PingFang SC';
             letter-spacing: 0.0085rem;
         }
     }
+
+    .home_description {
+        color: rgba(215, 10, 11, 1);
+        font-family: 'PingFang SC';
+        font-size: 0.4267rem;
+        font-weight: 700;
+        letter-spacing: 0.0085rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 0.5333rem;
+    }
 }
 
 // home_bottom
-// .home_bottom {
-//     margin: 0 auto;
-//     width: 19.9375rem;
-//     height: 11.8rem;
-//     .home_bottom_title {
-//         color: rgba(215, 10, 11, 1);
-//         font-weight: 700;
-//         font-family: $fontSC;
-//         text-align: center;
-//         letter-spacing: 0.02rem;
-//     }
-//     .home_bottom_explain {
-//         color: rgba(0, 0, 0, 1);
-//         font-family: $fontSC;
-//         font-size: 0.625rem;
-//         font-weight: 400;
-//         letter-spacing: 0.2px;
-//         opacity: 1;
-//         text-align: left;
-//         text-indent: 2em;
-//         line-height: 1rem;
-//     }
-//     .home_bottom_info {
-//         color: rgba(0, 0, 0, 1);
-//         font-family: $fontSC;
-//         font-size: 0.625rem;
-//         font-weight: 400;
-//         letter-spacing: 0.2px;
-//         opacity: 1;
-//         text-align: left;
-//         line-height: 1.2rem;
-//     }
-// }
+
+.home_bottom {
+    width: 100%;
+    height: 4.72rem;
+    margin-top: 0.2667rem;
+    background-image: url('../../assets/images/skyline/bg@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

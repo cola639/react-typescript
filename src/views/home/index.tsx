@@ -28,12 +28,14 @@ const OnlineVote: React.FC = () => {
                 <div className="home_middle_list">
                     <span>- 各参评单位 -</span>
                     <GovItem></GovItem>
+                    <GovItem></GovItem>
+                    <GovItem></GovItem>
+                    <GovItem></GovItem>
+                    <GovItem></GovItem>
                 </div>
 
                 <div className="home_description">
                     <span>- 投票规则 -</span>
-
-                    <div className="home_description_info"></div>
                 </div>
             </div>
 

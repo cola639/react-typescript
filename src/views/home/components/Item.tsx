@@ -1,6 +1,7 @@
 import React from 'react'
 import './item.scss'
 import logo from 'assets/logo/市水务局.webp' // I think react is built-in module to import the image
+import {Button} from 'antd'
 
 const GovItem: React.FC = () => {
     return (
@@ -13,27 +14,19 @@ const GovItem: React.FC = () => {
             </div>
             <div className="flex-column-no-align govItem_right">
                 <span className="govItem_right_title">市水务局</span>
-                <div className="flex-space-around">
+                <div className="flex-space-around govItem_right_vote">
                     <div className="flex-column-no-align govItem_right_wrap">
-                        <span className="grw_text">100票</span>
-                        {/* <van-button
-            className="grw_btn"
-            :color="userOnlineVoteTimes <= 0 ? '#999' : '#D31C1C'"
-            @click="hadnleVote('00')"
-            :loading="loadingGood"
-            >好
-          </van-button> */}
+                        <span className="grw_text">100</span>
+                        <Button className="grw_btn" type="primary">
+                            好
+                        </Button>
                     </div>
 
                     <div className="flex-column-no-align govItem_right_wrap">
                         <span className="grw_text">100</span>
-                        {/* <van-button
-            className="grw_btn"
-            :color="userOnlineVoteTimes <= 0 ? '#999' : ''"
-            @click="hadnleVote('01')"
-            :loading="loadingGeneral"
-            >一般</van-button
-          > */}
+                        <Button className="grw_btn grw_btn-black" type="primary">
+                            一般
+                        </Button>
                     </div>
                 </div>
             </div>

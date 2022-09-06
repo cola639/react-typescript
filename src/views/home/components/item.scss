@@ -1,6 +1,6 @@
 $fontSC: 'PingFang SC';
 .govItem {
-    width: 9.04rem;
+    width: 100%;
     height: 2.7733rem;
     border-radius: 0.25rem;
     opacity: 1;
@@ -28,29 +28,36 @@ $fontSC: 'PingFang SC';
     .govItem_right {
         flex: 6.136;
         height: 100%;
+        justify-content: flex-start;
+        margin-top: 0.4rem;
+
         .govItem_right_title {
-            opacity: 1;
             color: rgba(68, 120, 255, 1);
-            font-size: 16px;
+            font-size: 0.4267rem;
             font-weight: 700;
             font-family: $fontSC;
             text-align: left;
-            letter-spacing: 0.32px;
-            margin-left: 1rem;
+            letter-spacing: 0.0085rem;
+            margin-left: 0.5rem;
         }
 
         .govItem_right_wrap {
             text-align: center;
             .grw_text {
-                margin-top: 0.5rem;
+                margin-top: 0.15rem;
             }
             .grw_btn {
-                width: 5rem;
-                height: 2rem;
-                line-height: 2rem;
+                width: 2.1333rem;
+                height: 0.84rem;
+                line-height: 0.84rem;
                 border-radius: 4px;
-                margin-top: 0.5rem;
-                opacity: 1;
+                margin-top: 0.2rem;
+            }
+            .grw_btn-black {
+                background-color: #fff;
+                color: #999;
+                font-weight: 400;
+                border: none;
             }
         }
     }
