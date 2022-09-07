@@ -1,6 +1,6 @@
 import React from 'react'
 import './item.scss'
-import logo from 'assets/logo/市水务局.webp' // I think react is built-in module to import the image
+import logo from '@/assets/logo/市水务局.webp' // I think react is built-in module to import the image
 import {Button} from 'antd'
 
 const GovItem: React.FC = () => {

@@ -1,8 +1,8 @@
-import userReducer from '@app/store/slices/userSlice'
-import authReducer from '@app/store/slices/authSlice'
-import nightModeReducer from '@app/store/slices/nightModeSlice'
-import themeReducer from '@app/store/slices/themeSlice'
-import pwaReducer from '@app/store/slices/pwaSlice'
+import userReducer from '@/store/slices/userSlice'
+import authReducer from '@/store/slices/authSlice'
+import nightModeReducer from '@/store/slices/nightModeSlice'
+import themeReducer from '@/store/slices/themeSlice'
+import pwaReducer from '@/store/slices/pwaSlice'
 
 export default {
     user: userReducer,

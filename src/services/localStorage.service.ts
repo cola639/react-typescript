@@ -1,4 +1,4 @@
-// import { UserModel } from '@app/domain/UserModel';
+// import { UserModel } from '@/domain/UserModel';
 export interface UserModel {
     id: number
     firstName: string

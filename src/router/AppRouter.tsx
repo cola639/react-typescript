@@ -2,30 +2,31 @@ import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 // no lazy loading for auth pages to avoid flickering
-// const AuthLayout = React.lazy(() => import('@app/components/layouts/AuthLayout/AuthLayout'))
+// const AuthLayout = React.lazy(() => import('@/components/layouts/AuthLayout/AuthLayout'))
 import OnlineVote from '../views/home/index'
-// import SignUpPage from '@app/pages/SignUpPage'
-// import ForgotPasswordPage from '@app/pages/ForgotPasswordPage'
-// import SecurityCodePage from '@app/pages/SecurityCodePage'
-// import NewPasswordPage from '@app/pages/NewPasswordPage'
-// import LockPage from '@app/pages/LockPage'
+// import SignUpPage from '@/pages/SignUpPage'
+// import ForgotPasswordPage from '@/pages/ForgotPasswordPage'
+// import SecurityCodePage from '@/pages/SecurityCodePage'
+// import NewPasswordPage from '@/pages/NewPasswordPage'
+// import LockPage from '@/pages/LockPage'
 
-// import MainLayout from '@app/components/layouts/main/MainLayout/MainLayout'
-// import ProfileLayout from '@app/components/profile/ProfileLayout'
-// import RequireAuth from '@app/components/router/RequireAuth'
-// import {withLoading} from '@app/hocs/withLoading.hoc'
+// import MainLayout from '@/components/layouts/main/MainLayout/MainLayout'
+// import ProfileLayout from '@/components/profile/ProfileLayout'
+// import RequireAuth from '@/components/router/RequireAuth'
+import {withLoading} from '../hocs/withLoading.hoc'
 
-// const DashboardPage = React.lazy(() => import('@app/pages/DashboardPage'))
-// const PersonalInfoPage = React.lazy(() => import('@app/pages/PersonalInfoPage'))
+// const DashboardPage = React.lazy(() => import('@/pages/DashboardPage'))
+// const PersonalInfoPage = React.lazy(() => import('@/pages/PersonalInfoPage'))
 // const Logout = React.lazy(() => import('./Logout'))
 
 // export const DASHBOARD_PATH = '/'
 
 // const Dashboard = withLoading(DashboardPage)
 // const PersonalInfo = withLoading(PersonalInfoPage)
-
 // const AuthLayoutFallback = withLoading(AuthLayout)
 // const LogoutFallback = withLoading(Logout)
+
+const OnlineVotePage = withLoading(OnlineVote)
 
 export const AppRouter: React.FC = () => {
     // const protectedLayout = (
@@ -37,7 +38,7 @@ export const AppRouter: React.FC = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route index element={<OnlineVote />}></Route>
+                <Route index element={<OnlineVotePage />}></Route>
             </Routes>
         </BrowserRouter>
         // <BrowserRouter>

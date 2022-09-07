@@ -10,9 +10,9 @@ import {
     SecurityCodePayload,
     NewPasswordData,
     setNewPassword,
-} from '@app/api/auth.api'
-import {setUser} from '@app/store/slices/userSlice'
-import {deleteToken, deleteUser, persistToken, persistUser, readToken} from '@app/services/localStorage.service'
+} from '@/api/auth.api'
+import {setUser} from '@/store/slices/userSlice'
+import {deleteToken, deleteUser, persistToken, persistUser, readToken} from '@/services/localStorage.service'
 
 export interface AuthSlice {
     token: string

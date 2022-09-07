@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
-// import {UserModel} from '@app/domain/UserModel'
-import {readUser} from '@app/services/localStorage.service'
+// import {UserModel} from '@/domain/UserModel'
+import {readUser} from '@/services/localStorage.service'
 
 export interface UserModel {
     id: number

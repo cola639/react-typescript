@@ -1,6 +1,6 @@
-import {service} from '@app/api/http.api'
+import {service} from '@/api/http.api'
 import './mocks/auth.api.mock'
-// import {UserModel} from '@app/domain/UserModel'
+// import {UserModel} from '@/domain/UserModel'
 
 export interface UserModel {
     id: number

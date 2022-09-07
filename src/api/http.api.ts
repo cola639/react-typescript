@@ -1,8 +1,8 @@
 import axios from 'axios'
 import {AxiosError} from 'axios'
 import {message, Modal} from 'antd'
-import {ApiError} from '@app/api/ApiError'
-// import {readToken} from '@app/services/localStorage.service'
+import {ApiError} from '@/api/ApiError'
+// import {readToken} from '@/services/localStorage.service'
 
 export const service = axios.create({
     baseURL: process.env.REACT_APP_BASE_URL, // url = base url + request url
